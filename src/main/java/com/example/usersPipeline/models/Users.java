@@ -10,14 +10,23 @@ public class Users {
     @GeneratedValue
     private Integer id;
     private String name;
+    private String imageURL;
 
     public Users() {
     }
 
-    public Users(String name) {
+    public Users(String name, String imageURL) {
         this.name = name;
+        this.imageURL = imageURL;
     }
 
+    public String getImageURL() {
+        return imageURL;
+    }
+
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
+    }
 
     public Integer getId() {
         return id;
